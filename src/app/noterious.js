@@ -22,7 +22,7 @@ angular.module('noterious', [
         url: '/boards',
         templateUrl: 'app/boards/boards.tmpl.html',
         controller: 'BoardsCtrl',
-        controllerAs: 'ctrl',
+        controllerAs: 'boards',
         resolve: {
          'currentUser': ['Auth', function (Auth) {
           return Auth.$requireAuth();
