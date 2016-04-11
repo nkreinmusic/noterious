@@ -8,7 +8,7 @@ angular.module('noterious', [
 ])
   .constant('ENDPOINT_URI', 'https://frontendmasters-noterious.firebaseio.com/')
   .config(function ($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/login');
+    $urlRouterProvider.otherwise('/boards');
 
     $stateProvider
       .state('login', {
