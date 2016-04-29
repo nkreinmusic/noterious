@@ -25,8 +25,8 @@
       role="form"
       ng-submit="ctrl.createBoard(ctrl.newBoard, ctrl.createForm.$valid)"
       novalidate >
-      Name: <input type="text" ng-model="ctrl.newBoard.title" required />
-      Description: <input type="text" ng-model="ctrl.newBoard.description" />
+      Name: <input type="text" ng-model="ctrl.newBoard.title" placeholder="Name Your Board" required />
+      Description: <input type="text" ng-model="ctrl.newBoard.description" placeholder="Describe Your Board" />
       Make Public: <input type="checkbox" ng-model="ctrl.newBoard.isPublic" />
       <button type="submit">Create</button>
     </form>
