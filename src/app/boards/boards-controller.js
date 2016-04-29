@@ -3,6 +3,7 @@
 angular.module('noterious')
   .controller('BoardsCtrl', function (currentUser, BoardsModel) {
     var ctrl = this;
+    var boardNum = 4;
 
     ctrl.loading = false;
 
@@ -42,9 +43,12 @@ angular.module('noterious')
     };
 
     ctrl.createBoard = function (board, isValid) {
+      console.log(board, isValid)
       if (isValid) {
         ctrl.loading = true;
         // CREATE BOARD
+        ctrl.boards[boardNum] = board;
+        boardNum++;
         ctrl.resetForm();
       }
     };
