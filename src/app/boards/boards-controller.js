@@ -57,6 +57,7 @@ angular.module('noterious')
       if (isValid) {
         ctrl.loading = true;
         // UPDATE BOARD
+        ctrl.boards[boardId] = board;
         ctrl.cancelEditing();
       }
     };
